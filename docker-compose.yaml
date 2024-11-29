@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  pythonlife:
+    image: hk804/pythonlife:v2
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  pymovies:
+    image: hk804/pymovies:v2
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+  swiggy:
+    image: hk804/swiggy:v2
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
